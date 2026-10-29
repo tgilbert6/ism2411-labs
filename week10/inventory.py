@@ -2,6 +2,18 @@
 # Author: tgilbert
 # Module 10 Lab: Inventory List Manager
 
+# Self Reflection ----------
+#
+# 1) I did not think python would have two types of lists. I figured that you could prevent overwriting by just copying a list as a backup, but tuples do this better.
+# Otherwise, they work the same way I would expect but I did not know a step could be specified.
+#
+# 2) I have not been in a position like this, but an instance this would be better than Excel would be if I was working with a constantly changing dataset. As
+# discussed in class, sometimes there are millions of transactions going through at once and there is no way Excel would be able to handle that as fast or as easily. The
+# most rows I've ever seen in Excel was around 30,000 and even then I was having some trouble loading it. This would be especially true during high volume days such as before
+# a holiday and if I needed to see more than half a second of data.
+#
+# ---------------------------
+
 print("--- Exercise 1: Build the list ---")
 
 inventory = ["pen","notebook","stapler","tape","marker"]
@@ -80,4 +92,4 @@ for amount in sales:
         high_sales.append(amount)
 print("High sales:", high_sales)
 print(f"Count: {len(high_sales)}")
-print(f"Average: {sum(high_sales) / len(high_sales):.2f}")
+print(f"Average: ~{sum(high_sales) / len(high_sales):.2f}")
